@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datepicker</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datepicker</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="datepicker">
-        <input type="text" id="date-input" placeholder="MM/DD/YYYY">
-        <button id="toggle-datepicker">Select date</button>
+  <div class="datepicker-container">
+    <input type="text" class="datepicker-input" placeholder="MM/DD/YYYY" />
+    <button class="datepicker-button">Select Date</button>
+    <div class="datepicker-popup" hidden>
+      <div class="datepicker-header">
+        <button class="datepicker-prev">&#10094;</button>
+        <span class="datepicker-month-year"></span>
+        <button class="datepicker-next">&#10095;</button>
+      </div>
+      <table class="datepicker-calendar">
+        <thead>
+          <tr>
+            <th>Su</th>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
-    <div id="datepicker-popup" class="hidden">
-        <!-- Datepicker calendar will be rendered here -->
-    </div>
-    <script src="datepicker.ts"></script>
+  </div>
+  <script src="datepicker.ts"></script>
 </body>
 </html>
