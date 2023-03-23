@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.datepicker {
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#datepicker-popup {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.datepicker-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.datepicker-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.blackout-date {
+    background-color: #ccc;
+    color: #999;
+}
+
+.selected-date {
+    background-color: #00f;
+    color: white;
+}
